@@ -2,11 +2,7 @@
     <x-container>
         <form action="{{ route('friends.store', $user) }}" class="px-4 mb-8" method="POST">
             @csrf
-            <input 
-            type="submit"
-            class="px-4 py-2 bg-green-500 text-gray-800 font-semibold sm:rounded-lg text-xs"
-            value="Add Friends"
-            >
+            <x-submit-button>App friend</x-submit-button>
         </form>
 
         @foreach ($posts as $post)

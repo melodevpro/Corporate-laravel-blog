@@ -9,10 +9,7 @@
             placeholder="What's on your mind?..."
             >
         </textarea>
-            <input 
-            type="submit"
-            class="px-4 py-2 bg-green-500 text-gray-800 font-semibold sm:rounded-lg text-xs"
-            >
+            <x-submit-button>Submit</x-submit-button>
         </form>
 
         @foreach ($posts as $post)
